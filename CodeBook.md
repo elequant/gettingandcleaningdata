@@ -3,18 +3,19 @@
 ## Introduction
 
 ## CodeBook Content
-* 1. Data Cleaning via *run_analysis.R*
-* 2. Data Description
-* 3. Data Dictionary
-* 4. References
+* 1. Original Data
+* 2. Data Cleaning via *run_analysis.R*
+* 3. Data Description
+* 4. Data Dictionary
+* 5. References
 
-## 1.Original data
+## 1. Original Data
 
-## 2.Data Cleaning via *run_analysis.R*
+## 2. Data Cleaning via *run_analysis.R*
 
-## 3.Data Description
+## 3. Data Description
 
-## 4.Data Dictionary
+## 4. Data Dictionary
 
 <table>
 	<tr>
@@ -433,6 +434,6 @@
 	</tr>
 </table>
 
-### References
+### 5. References
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
