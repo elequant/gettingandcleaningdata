@@ -24,6 +24,6 @@ This repo contains ...
 
 ## Instruction for Use
 
-It is assumed that you already have R installed on your computer. If this is the case, download the file `run_analysis.R` and save it into the working directory of the R process. If you are not sure about your current directory start R or R-Studio and call `getwd()`. <br />After that you can run the script, e.g. by typing `source("run_analysis.R")` into the R-studio console.
+It is assumed that you already have R installed on your computer. If this is the case, download the file `run_analysis.R` and save it into the working directory of the R process. If you are not sure about your current directory start R or RStudio and call `getwd()`. <br />After that you can run the script, e.g. by typing `source("run_analysis.R")` into the RStudio console.
 The R script will download the HAR data set automatically from the *UCI Machine Learning Repository* (if it is not already present) and generate the files `tidyDataSet.txt` and `tidyDataSet.csv` containing the tidy data set as described in the codebook `CodeBook.md`.
 
