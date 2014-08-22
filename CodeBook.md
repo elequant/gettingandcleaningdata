@@ -1,19 +1,39 @@
 # CodeBook
 
 ## Introduction
+* projekt HAR macht dies und das (ganz kurz)=> the study[1],
+* weiterführende Infos hier data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site  (on the website of UCI Machine Learning repository) where the data was obtained:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+* The goal of this project was to prepare tidy data that can be used for later analysis.
+* In diesem Projekt wurde zusammnefügen und cleaning betrieben für spätere analyse, einzelne schritte siehe 2.
+* Dieses Codebook beschreibt also Transformationschritte und insbesondere die resultiernden Daten.
+* Herzstück dieses Codebooks ist also das DataDictionay in section 4 welches hilft die Daten zu verstehen
 
 ## CodeBook Content
-* 1. Original Data
-* 2. Data Cleaning via *run_analysis.R*
-* 3. Data Description
-* 4. Data Dictionary
-* 5. References
+1. Data Cleaning via *run_analysis.R*
+2. Data Description   
+3. Data Dictionary
+4. References
 
-## 1. Original Data
+## 1. Original data
 
-## 2. Data Cleaning via *run_analysis.R*
+* Originaldaten finden sich hier: [2]
+* Originaldaten aufgeteilt in Training und tests-daten.
+* Infos zu daten finden sich hier. [3] [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+
+## 2. Data Cleaning via *run_analysis.R* 
+* Getting
+* Merges the training and the test sets to create one data set.
+* Extracts only the measurements on the mean and standard deviation for each measurement. Mean & Standard: meanfreq nicht, siehe features_info: average of components , not mean in statistical bedeutung    
+* Uses descriptive activity names to name the activities in the data set
+* Appropriately labels the data set with descriptive variable names. 
+* Creates a resulting tidy data set with the average of each variable for each activity and each subject. 
+
 
 ## 3. Data Description
+* Variablen haben descriptive names da...
+* Allgemeiner Aufbau
+* Because alle werte sind normierte werte hat keine variable eine unit
 
 ## 4. Data Dictionary
 
@@ -434,6 +454,10 @@
 	</tr>
 </table>
 
-### 5. References
+### References
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+[2] The download link of the *Human Activity Recognition Using Smartphones Data Set*: `https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip`
+
+[3] The HAR Data Set information of the UCI Machine Learning Repository:  `http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones`
