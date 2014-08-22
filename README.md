@@ -4,7 +4,7 @@ This repo (*gettingandcleaningdata*) is part of the *Getting and Cleaning Data C
 
 ## Project Objectives
 
-The project is based on a data set ([*HAR UCI Dataset*](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)) provided by the [*UCI Machine Learning Repository*](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) which contains measurements collected from the accelerometers from a Samsung smartphone attached to human subjects performing activities of daily living (e.g. walking, sitting, laying etc.).<br />
+The project is based on a data set ([*HAR UCI Dataset*](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)) provided by the [*UCI Machine Learning Repository*](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) which contains measurements collected from the accelerometers and the gyroscope from a Samsung smartphone attached to human subjects performing activities of daily living (e.g. walking, sitting, laying etc.).<br />
 An R script ([`run_analysis.R`](https://github.com/elequant/gettingandcleaningdata/blob/master/run_analysis.R)) was developed, which functionality comprises 
 
 * the download and the unpacking of the HAR data set if it is not already present in the current working directory, 
@@ -18,7 +18,7 @@ Each step of the R script and the resulting data set(s) are described in detail 
 This repo contains ...
 
 1. ...a <b>tidy data set</b> containing mean values and standard deviations of measurements collected from the accelerometers and the gyroscope of a smartphone for each activity and each human subject. This data set is provided in two different file formats: the file `tidyDataSet.txt` was required (as project goal) and the file `tidyDataSet.csv` can be imported easily by a spreadsheet program,
-2. ...a <b>script</b> named `run_analysis.R` for performing the data collecting steps and data cleaning steps,
+2. ...a <b>script</b> named `run_analysis.R` for performing the data collecting steps and the data cleaning steps,
 3. ...a <b>code book</b> called `CodeBook.md` that describes the variables, the data, and any transformations that the R script performed to clean up the data.
 
 
