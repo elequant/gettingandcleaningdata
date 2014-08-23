@@ -11,7 +11,7 @@ An R script ([`run_analysis.R`](https://github.com/elequant/gettingandcleaningda
 * the aggregation and the processing of the HAR data set and 
 * the generation of a tidy data set with the average of each mean value and standard deviation for each activity and each experimental subject. 
 
-Each step of the R script and the resulting data set(s) are described in detail in the codebook [`CodeBook.md`](https://github.com/elequant/gettingandcleaningdata/blob/master/CodeBook.md).
+Each step of the R script is explained later in this document and the resulting data set(s) are described in detail in the codebook [`CodeBook.md`](https://github.com/elequant/gettingandcleaningdata/blob/master/CodeBook.md).
 
 ## Repository Content
 
@@ -21,6 +21,16 @@ This repo contains ...
 2. ...a <b>script</b> named `run_analysis.R` for performing the data collecting steps and the data cleaning steps,
 3. ...a <b>code book</b> called `CodeBook.md` that describes the variables, the data, and any transformations that the R script performed to clean up the data.
 
+## Functionality of the script *run_analysis.R*
+
+The R script *run_analysis.R* performs following steps in order to transform and clean up the original data:
+
+* *Pre-step* : The R script will download the *HAR UCI* data set (as zip file) from the *UCI Machine Learning* repository if it is not already present. After that the zip file is unpacked into the current working directory of the R process. (See function `downloadAndExtractDataArchive`.)
+* *Step 1* : Because the original data is splitted in different sets (trainings set and test set) and each set is splitted in different files the data is merged to create one big data set. (See function `mergeDataToOneSet`.)
+* *Step 2* : In this step only the measurements on the mean and standard deviation for each measurement record are extracted for further processing. (See function `extractMeansAndDeviations`.) Please **note** that features containing "meanFreq" remain unconsidered because this variables contains values of weighted averages of different components but are not "means" in a statistical meaning.   
+* *Step 3* : The activities in the data set are replaced with descriptive activity names. Therefore the activity names which are listed in `activity_labels.txt` are used. (See function `nameActivities`.)
+* *Step 4* : This step labels the data set columns with descriptive variable names. Due to the length of the variable names the "lower camel case name convention" is used in combination with periods in order to make them more readable. (See function `labelColumns`.)
+* *Step 5* : Finally a resulting tidy data set with the average of each variable for each activity and each subject is created. The tidy data is exported in the two file formats, `tidyDataSet.txt` and `tidyDataSet.csv`. (See function `produceTidyDataSet`.)
 
 ## Instruction for Use
 
