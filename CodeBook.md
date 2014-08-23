@@ -52,7 +52,7 @@ The R script *run_analysis.R* performs following steps in order to transform and
 	<tr>
 		<td>activity</td>
 		<td>A descriptive label specifying the activity the person performed in a time window</td>
-		<td>Characters (String)</td>
+		<td>Character (String)</td>
 		<td>Enumeration<br>1: WALKING<br>2: WALKING_UPSTAIRS<br>3: WALKING_DOWNSTAIRS<br>4: SITTING<br>5: STANDING<br>6: LAYING</td>
 	</tr>
 	<tr>
